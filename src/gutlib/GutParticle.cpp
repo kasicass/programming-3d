@@ -182,7 +182,7 @@ int CGutParticle::BuildMesh(Matrix4x4 &camera_matrix)
 		float fFadeout = m_pParticleArray[i].m_fLife * 5;
 		if ( fFadeout > 1.0f ) fFadeout = 1.0f;
 
-		int intensity = fFadeout * 255;
+		int intensity = (int)(fFadeout * 255);
 		unsigned int color = intensity<<24 | intensity<<16 | intensity<<8 | intensity;
 
 		p[0].m_Color = color;
@@ -209,7 +209,7 @@ int CGutParticle::BuildPointSprite(void)
 		float fFadeout = m_pParticleArray[i].m_fLife * 5;
 		if ( fFadeout > 1.0f ) fFadeout = 1.0f;
 
-		int intensity = fFadeout * 255;
+		int intensity = (int)(fFadeout * 255);
 		unsigned int color = intensity<<24 | intensity<<16 | intensity<<8 | intensity;
 		
 		// `设置位置和颜色`

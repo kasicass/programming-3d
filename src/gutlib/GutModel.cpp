@@ -597,7 +597,7 @@ void CGutModel::SetTexturePath(const char *path)
 		free(m_pszTexturePath);
 	}
 
-	m_pszTexturePath = strdup(path);
+	m_pszTexturePath = _strdup(path);
 }
 
 const sVertexDecl *CGutModel::GetVertexFormat(void)

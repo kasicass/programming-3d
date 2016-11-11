@@ -91,10 +91,10 @@ bool CGutFontUniCodeDX9::AccessTexture(WCHAR c, int &x, int &y)
 		D3DLOCKED_RECT locked;
 		
 		RECT rect;
-		rect.left = tX * m_iTextureW;
-		rect.right = rect.left + tW * m_iTextureW;
-		rect.top = tY * m_iTextureH;
-		rect.bottom = rect.top + tH * m_iTextureH;
+		rect.left   = (LONG)(tX * m_iTextureW);
+		rect.right  = (LONG)(rect.left + tW * m_iTextureW);
+		rect.top    = (LONG)(tY * m_iTextureH);
+		rect.bottom = (LONG)(rect.top + tH * m_iTextureH);
 
 		m_pFontTexture->LockRect(0, &locked, &rect, 0);
 		

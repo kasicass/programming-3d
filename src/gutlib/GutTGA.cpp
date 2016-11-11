@@ -66,7 +66,7 @@ int TGAImg::Load(const char* szFilename)
 
 	// Get file size
 	fIn.seekg(0,ios_base::end);
-	ulSize=fIn.tellg();
+	ulSize=(unsigned long)fIn.tellg();
 	fIn.seekg(0,ios_base::beg);
 
 	// Allocate some space

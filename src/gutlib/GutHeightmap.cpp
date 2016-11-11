@@ -40,7 +40,7 @@ bool CGutHeightmap::LoadHeightmapTexture(const char *filename)
 {
 	char file_ext[16];
 	_splitpath(filename, NULL, NULL, NULL, file_ext);
-	strlwr(file_ext);
+	_strlwr(file_ext);
 
 	// only loads tga for now
 	if ( strcmp(file_ext, ".tga") )

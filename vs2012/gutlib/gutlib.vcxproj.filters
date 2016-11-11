@@ -55,9 +55,6 @@
     <ClCompile Include="..\..\src\gutlib\GutTGA.cpp">
       <Filter>Image</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\gutlib\GutImage.cpp">
-      <Filter>Image</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\gutlib\GutInput.cpp">
       <Filter>Input</Filter>
     </ClCompile>

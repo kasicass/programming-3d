@@ -44,7 +44,7 @@ inline UINT DecodeEdgeIndex(int index)
 
 UINT CGutShadowVolume::InsertEdge(sEdge &edge)
 {
-	for ( UINT i=0; i<m_iNumEdges; i++ )
+	for ( UINT i=0; i<(UINT)m_iNumEdges; i++ )
 	{
 		if ( m_EdgeArray[i].m_pA==edge.m_pB && m_EdgeArray[i].m_pB==edge.m_pA )
 		{

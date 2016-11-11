@@ -112,7 +112,7 @@ LPDIRECT3DTEXTURE9 GutLoadNoCompressedTexture_DX9(const char *filename, sImageIn
 {
 	char file_ext[16];
 	_splitpath(filename, NULL, NULL, NULL, file_ext);
-	strlwr(file_ext);
+	_strlwr(file_ext);
 
 	GutImage *pLoader = NULL;
 
@@ -257,7 +257,7 @@ LPDIRECT3DCUBETEXTURE9 GutLoadCubemapTexture_DX9(const char **texture_array, boo
 
 		char file_ext[16];
 		_splitpath(filename, NULL, NULL, NULL, file_ext);
-		strlwr(file_ext);
+		_strlwr(file_ext);
 
 		GutImage *pLoader = NULL;
 
@@ -364,7 +364,7 @@ LPDIRECT3DTEXTURE9 GutLoadTexture_DX9(const char *filename, sImageInfo *info, bo
 {
 	char file_ext[16];
 	_splitpath(filename, NULL, NULL, NULL, file_ext);
-	strlwr(file_ext);
+	_strlwr(file_ext);
 
 	if ( !strcmp(file_ext, ".dds") )
 	{

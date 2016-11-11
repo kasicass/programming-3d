@@ -54,11 +54,11 @@ void sModelMaterial_OpenGL::Release(void)
 
 void sModelMaterial_OpenGL::Submit(sModelVertexChunk_OpenGL *pVChunk, UINT mask)
 {
-	bool bSubmitCullFace = mask & SUBMIT_CULLFACE;
-	bool bSubmitMtl = mask & SUBMIT_MTL;
-	bool bSubmitShader = mask & SUBMIT_SHADER;
-	bool bSubmitTexture = mask & SUBMIT_TEXTURES;
-	bool bSubmitBlendMode = mask & SUBMIT_BLEND;
+	bool bSubmitCullFace = !!(mask & SUBMIT_CULLFACE);
+	bool bSubmitMtl = !!(mask & SUBMIT_MTL);
+	bool bSubmitShader = !!(mask & SUBMIT_SHADER);
+	bool bSubmitTexture = !!(mask & SUBMIT_TEXTURES);
+	bool bSubmitBlendMode = !!(mask & SUBMIT_BLEND);
 
 	if ( bSubmitMtl )
 	{
@@ -280,7 +280,7 @@ bool CGutModel_OpenGL::ConvertToOpenGLModel(CGutModel *pModel)
 
 	printf("Building model for OpenGL\n");
 
-	int i,j,k;
+	int i,j;
 
 	m_iNumMaterials = pModel->m_iNumMaterials;
 	char szTextureName[256];

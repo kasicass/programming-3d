@@ -19,11 +19,11 @@ void GutSetDX9BackFace(DWORD cullface)
 
 void sModelMaterial_DX9::Submit(int mask)
 {
-	bool bSubmitCullFace = mask & SUBMIT_CULLFACE;
-	bool bSubmitMtl = mask & SUBMIT_MTL;
-	bool bSubmitShader = mask & SUBMIT_SHADER;
-	bool bSubmitTexture = mask & SUBMIT_TEXTURES;
-	bool bSubmitBlend = mask & SUBMIT_BLEND;
+	bool bSubmitCullFace = !!(mask & SUBMIT_CULLFACE);
+	bool bSubmitMtl = !!(mask & SUBMIT_MTL);
+	bool bSubmitShader = !!(mask & SUBMIT_SHADER);
+	bool bSubmitTexture = !!(mask & SUBMIT_TEXTURES);
+	bool bSubmitBlend = !!(mask & SUBMIT_BLEND);
 
 	LPDIRECT3DDEVICE9 pDevice = GutGetGraphicsDeviceDX9();
 
@@ -155,10 +155,10 @@ void sModelMaterial_DX9::Submit(int mask)
 			pDevice->SetTextureStageState(0, D3DTSS_COLORARG2, D3DTA_TFACTOR);
 			pDevice->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_SELECTARG2);
 
-			int r = m_Material.Diffuse.r * 255;
-			int g = m_Material.Diffuse.g * 255;
-			int b = m_Material.Diffuse.b * 255;
-			int a = m_Material.Diffuse.a * 255;
+			int r = (int)(m_Material.Diffuse.r * 255);
+			int g = (int)(m_Material.Diffuse.g * 255);
+			int b = (int)(m_Material.Diffuse.b * 255);
+			int a = (int)(m_Material.Diffuse.a * 255);
 
 			pDevice->SetRenderState(D3DRS_TEXTUREFACTOR, D3DCOLOR_RGBA(r,g,b,a));
 		}

@@ -27,8 +27,8 @@ bool GutInitGraphicsDeviceDX9(GutDeviceSpec *pSpec)
 	RECT rect;
 	GetWindowRect(hWnd, &rect);
 	
-	float w = rect.right - rect.left;
-	float h = rect.bottom - rect.top;
+	float w = (float)(rect.right - rect.left);
+	float h = (float)(rect.bottom - rect.top);
 	if ( w==0 || h==0 )
 		return false;
 

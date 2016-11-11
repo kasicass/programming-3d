@@ -49,9 +49,9 @@ bool CGutFontUniCode::Initialize(void)
 	HDC hDC = GetDC(hWnd);
 
 	m_MemDC = CreateCompatibleDC(hDC);
-	m_Bitmap = CreateCompatibleBitmap(m_MemDC, m_fFontWidth, m_fFontHeight);
+	m_Bitmap = CreateCompatibleBitmap(m_MemDC, (int)m_fFontWidth, (int)m_fFontHeight);
 	m_Font = CreateFont(
-					m_fFontHeight, m_fFontWidth*0.5f, 
+					(int)m_fFontHeight, (int)(m_fFontWidth*0.5f), 
 					0, 0, 
 					FW_NORMAL, FALSE, FALSE, FALSE,
 					DEFAULT_CHARSET,

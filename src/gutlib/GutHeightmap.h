@@ -31,7 +31,7 @@ protected:
 	{
 		unsigned char *m_pHeightUINT8;
 		unsigned short *m_pHeightUINT16;
-		unsigned float *m_pHeightFLOAT32;
+		float *m_pHeightFLOAT32;
 	};
 
 	enum HeightmapFMT 

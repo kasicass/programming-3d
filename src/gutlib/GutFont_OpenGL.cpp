@@ -102,11 +102,11 @@ bool CGutFontUniCodeOpenGL::AccessTexture(WCHAR c, int &x, int &y)
 		float tW = 1.0f/(float)m_iLayoutW;
 		float tH = 1.0f/(float)m_iLayoutH;
 		
-		int left = tX * m_iTextureW;
-		int width = tW * m_iTextureW;
-		int right = left + width;
-		int top = tY * m_iTextureH;
-		int height = tH * m_iTextureH;
+		int left   = (int)(tX * m_iTextureW);
+		int width  = (int)(tW * m_iTextureW);
+		int right  = left + width;
+		int top    = (int)(tY * m_iTextureH);
+		int height = (int)(tH * m_iTextureH);
 		int bottom = top + height;
 
 		unsigned char *pBuffer = new unsigned char[width*height];

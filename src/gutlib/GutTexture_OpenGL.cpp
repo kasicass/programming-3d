@@ -230,7 +230,7 @@ GLuint GutLoadNoCompressedTexture_OpenGL(const char *filename, sImageInfo *pInfo
 
 	char file_ext[16];
 	_splitpath(filename, NULL, NULL, NULL, file_ext);
-	strlwr(file_ext);
+	_strlwr(file_ext);
 
 	GutImage *pLoader = NULL;
 
@@ -350,7 +350,7 @@ GLuint GutLoadNoCompressedCubemapTexture_OpenGL(const char **filename_array, boo
 
 		char file_ext[16];
 		_splitpath(filename, NULL, NULL, NULL, file_ext);
-		strlwr(file_ext);
+		_strlwr(file_ext);
 
 		GutImage *pLoader = NULL;
 
@@ -411,7 +411,7 @@ GLuint GutLoadTexture_OpenGL(const char *filename, sImageInfo *pInfo, bool mipma
 {
 	char file_ext[16];
 	_splitpath(filename, NULL, NULL, NULL, file_ext);
-	strlwr(file_ext);
+	_strlwr(file_ext);
 
 	if ( !strcmp(file_ext, ".dds") )
 	{
@@ -435,7 +435,7 @@ GLuint GutLoadCubemapTexture_OpenGL(const char *filename)
 {
 	char file_ext[16];
 	_splitpath(filename, NULL, NULL, NULL, file_ext);
-	strlwr(file_ext);
+	_strlwr(file_ext);
 
 	if ( strcmp(file_ext, ".dds") )
 	{
@@ -574,7 +574,7 @@ GLuint GutLoadCubemapTexture_OpenGL(const char **filename_array, bool mipmap_ena
 	const char *filename = filename_array[0];
 	char file_ext[16];
 	_splitpath(filename, NULL, NULL, NULL, file_ext);
-	strlwr(file_ext);
+	_strlwr(file_ext);
 
 	if ( !strcmp(file_ext, ".dds") )
 	{

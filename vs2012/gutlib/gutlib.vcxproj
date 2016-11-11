@@ -27,7 +27,6 @@
     <ClCompile Include="..\..\src\gutlib\GutHeightmap_DX10.cpp" />
     <ClCompile Include="..\..\src\gutlib\GutHeightmap_DX9.cpp" />
     <ClCompile Include="..\..\src\gutlib\GutHeightmap_OpenGL.cpp" />
-    <ClCompile Include="..\..\src\gutlib\GutImage.cpp" />
     <ClCompile Include="..\..\src\gutlib\GutInput.cpp" />
     <ClCompile Include="..\..\src\gutlib\GutMem.cpp" />
     <ClCompile Include="..\..\src\gutlib\GutModel.cpp" />

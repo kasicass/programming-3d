@@ -131,7 +131,7 @@ static bool SetPixelformat(void)
 
 void ErrorMessage(LPTSTR lpszFunction) 
 { 
-    TCHAR szBuf[80]; 
+//    TCHAR szBuf[80]; 
     LPVOID lpMsgBuf;
     DWORD dw = GetLastError(); 
 

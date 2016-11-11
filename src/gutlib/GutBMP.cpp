@@ -120,7 +120,7 @@ int BMPImg::GetFile(const char* szFilename)
  
 	// Get file size
 	fIn.seekg(0,ios_base::end);
-	ulSize=fIn.tellg();
+	ulSize=(unsigned long)fIn.tellg();
 	fIn.seekg(0,ios_base::beg);
  
 	// Allocate some space
@@ -354,9 +354,9 @@ unsigned char* BMPImg::GetPalette(void)
 unsigned char *BMPImg::GetPixel(int x, int y)
 {
 	if ( x < 0 ) x = 0;
-	if ( x >= iWidth ) x = iWidth-1;
+	if ( x >= (int)iWidth ) x = iWidth-1;
 	if ( y < 0 ) y = 0;
-	if ( y >= iHeight ) y = iHeight-1;
+	if ( y >= (int)iHeight ) y = iHeight-1;
 
 	int bytes_per_pixel = iBPP / 8;
 	int loc = (y * iWidth + x) * bytes_per_pixel;

@@ -93,15 +93,15 @@ bool GutInitGraphicsDevice(GutDeviceSpec &spec)
 
 bool GutReleaseGraphicsDevice(void)
 {
-	if ( !stricmp(g_szDeviceName, "opengl") )
+	if ( !_stricmp(g_szDeviceName, "opengl") )
 	{
 		return GutReleaseGraphicsDeviceOpenGL();
 	}
-	else if ( !stricmp(g_szDeviceName, "dx9") )
+	else if ( !_stricmp(g_szDeviceName, "dx9") )
 	{
 		return GutReleaseGraphicsDeviceDX9();
 	}
-	else if ( !stricmp(g_szDeviceName, "dx10") )
+	else if ( !_stricmp(g_szDeviceName, "dx10") )
 	{
 	#ifdef _ENABLE_DX10_
 		return GutReleaseGraphicsDeviceDX10();
@@ -115,15 +115,15 @@ GutEnum GutGetGraphicsDeviceType(const char *device)
 {
 	if ( device )
 	{
-		if ( !stricmp(device, "opengl") )
+		if ( !_stricmp(device, "opengl") )
 		{
 			return GUT_OPENGL;
 		}
-		else if ( !stricmp(device, "dx9") )
+		else if ( !_stricmp(device, "dx9") )
 		{
 			return GUT_DX9;
 		}
-		else if ( !stricmp(device, "dx10") )
+		else if ( !_stricmp(device, "dx10") )
 		{
 			return GUT_DX10;
 		}
