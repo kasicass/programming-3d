@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\gutlib\Gut.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutFileUtility.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutUserControl.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutDX10.cpp">
+      <Filter>DX10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutFont_DX10.cpp">
+      <Filter>DX10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutHeightmap_DX10.cpp">
+      <Filter>DX10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutModel_DX10.cpp">
+      <Filter>DX10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutTexture_DX10.cpp">
+      <Filter>DX10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutDX9.cpp">
+      <Filter>DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutFont_DX9.cpp">
+      <Filter>DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutHeightmap_DX9.cpp">
+      <Filter>DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutModel_DX9.cpp">
+      <Filter>DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutTexture_DX9.cpp">
+      <Filter>DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutFontUnicodeWin32.cpp">
+      <Filter>Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutFont.cpp">
+      <Filter>Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutBMP.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutDDS.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutTGA.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutImage.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutInput.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\Matrix4x4_Reference.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\Matrix4x4_SSE.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\Vector4_Reference.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\Vector4_SSE.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutHeightmap.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutModel.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutParticle.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutShadowVolume.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutFont_OpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutHeightmap_OpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutModel_OpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutTexture_OpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutOpenGL.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\glew.c">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutMem.cpp">
+      <Filter>Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutTimer.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gutlib\GutWin32.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\gutlib\Gut.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutDefs.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutFileUtility.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutUserControl.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutDX10.h">
+      <Filter>DX10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutFont_DX10.h">
+      <Filter>DX10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutHeightmap_DX10.h">
+      <Filter>DX10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutModel_DX10.h">
+      <Filter>DX10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutTexture_DX10.h">
+      <Filter>DX10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutDX9.h">
+      <Filter>DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutFont_DX9.h">
+      <Filter>DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutHeightmap_DX9.h">
+      <Filter>DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutModel_DX9.h">
+      <Filter>DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutTexture_DX9.h">
+      <Filter>DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutFontUnicodeWin32.h">
+      <Filter>Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutFont.h">
+      <Filter>Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutBMP.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutDDS.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutTGA.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutImage.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutInput.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\FastMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\Matrix4x4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\Matrix4x4_Reference.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\Matrix4x4_SSE.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\Vector4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\Vector4_Reference.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\Vector4_SSE.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutHeightmap.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutModel.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutParticle.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutShadowVolume.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutFont_OpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutHeightmap_OpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutModel_OpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutTexture_OpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutOpenGL.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\glew.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\glxew.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\wglew.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutMem.h">
+      <Filter>Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutTimer.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\gutlib\GutWin32.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{197457f7-6689-4bb2-9b78-c31cd41a594b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX10">
+      <UniqueIdentifier>{5f7d92dc-57be-4dd4-b448-f20ba71d290b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX9">
+      <UniqueIdentifier>{b69ba203-5552-46b8-ab4f-c8c8b0a84059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Font">
+      <UniqueIdentifier>{c87fcd96-e251-4f74-bc3c-372b536a7851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image">
+      <UniqueIdentifier>{52bf8955-50bc-47d1-94fe-e7d761c65c21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{6c7e781c-a9aa-4549-bb2c-466dd7202e28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{99dc96f9-359f-4b26-b4b6-3e01aeb2214a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{63257ede-3599-4422-ac35-7027992e67ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{68c1238a-b900-46d4-aa41-881b50827e29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sys">
+      <UniqueIdentifier>{444dfada-ab92-4ae6-915d-ba5e3e7581c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32">
+      <UniqueIdentifier>{d797a94a-019f-44ae-9091-31d9256902ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

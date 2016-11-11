@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\gutlib\glew.c" />
+    <ClCompile Include="..\..\src\gutlib\Gut.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutBMP.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutDDS.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutDX10.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutDX9.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutFileUtility.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutFont.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutFontUnicodeWin32.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutFont_DX10.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutFont_DX9.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutFont_OpenGL.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutHeightmap.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutHeightmap_DX10.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutHeightmap_DX9.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutHeightmap_OpenGL.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutImage.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutInput.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutMem.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutModel.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutModel_DX10.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutModel_DX9.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutModel_OpenGL.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutOpenGL.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutParticle.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutShadowVolume.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutTexture_DX10.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutTexture_DX9.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutTexture_OpenGL.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutTGA.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutTimer.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutUserControl.cpp" />
+    <ClCompile Include="..\..\src\gutlib\GutWin32.cpp" />
+    <ClCompile Include="..\..\src\gutlib\Matrix4x4_Reference.cpp" />
+    <ClCompile Include="..\..\src\gutlib\Matrix4x4_SSE.cpp" />
+    <ClCompile Include="..\..\src\gutlib\Vector4_Reference.cpp" />
+    <ClCompile Include="..\..\src\gutlib\Vector4_SSE.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\gutlib\FastMath.h" />
+    <ClInclude Include="..\..\src\gutlib\glew.h" />
+    <ClInclude Include="..\..\src\gutlib\glxew.h" />
+    <ClInclude Include="..\..\src\gutlib\Gut.h" />
+    <ClInclude Include="..\..\src\gutlib\GutBMP.h" />
+    <ClInclude Include="..\..\src\gutlib\GutDDS.h" />
+    <ClInclude Include="..\..\src\gutlib\GutDefs.h" />
+    <ClInclude Include="..\..\src\gutlib\GutDX10.h" />
+    <ClInclude Include="..\..\src\gutlib\GutDX9.h" />
+    <ClInclude Include="..\..\src\gutlib\GutFileUtility.h" />
+    <ClInclude Include="..\..\src\gutlib\GutFont.h" />
+    <ClInclude Include="..\..\src\gutlib\GutFontUnicodeWin32.h" />
+    <ClInclude Include="..\..\src\gutlib\GutFont_DX10.h" />
+    <ClInclude Include="..\..\src\gutlib\GutFont_DX9.h" />
+    <ClInclude Include="..\..\src\gutlib\GutFont_OpenGL.h" />
+    <ClInclude Include="..\..\src\gutlib\GutHeightmap.h" />
+    <ClInclude Include="..\..\src\gutlib\GutHeightmap_DX10.h" />
+    <ClInclude Include="..\..\src\gutlib\GutHeightmap_DX9.h" />
+    <ClInclude Include="..\..\src\gutlib\GutHeightmap_OpenGL.h" />
+    <ClInclude Include="..\..\src\gutlib\GutImage.h" />
+    <ClInclude Include="..\..\src\gutlib\GutInput.h" />
+    <ClInclude Include="..\..\src\gutlib\GutMem.h" />
+    <ClInclude Include="..\..\src\gutlib\GutModel.h" />
+    <ClInclude Include="..\..\src\gutlib\GutModel_DX10.h" />
+    <ClInclude Include="..\..\src\gutlib\GutModel_DX9.h" />
+    <ClInclude Include="..\..\src\gutlib\GutModel_OpenGL.h" />
+    <ClInclude Include="..\..\src\gutlib\GutOpenGL.h" />
+    <ClInclude Include="..\..\src\gutlib\GutParticle.h" />
+    <ClInclude Include="..\..\src\gutlib\GutShadowVolume.h" />
+    <ClInclude Include="..\..\src\gutlib\GutTexture_DX10.h" />
+    <ClInclude Include="..\..\src\gutlib\GutTexture_DX9.h" />
+    <ClInclude Include="..\..\src\gutlib\GutTexture_OpenGL.h" />
+    <ClInclude Include="..\..\src\gutlib\GutTGA.h" />
+    <ClInclude Include="..\..\src\gutlib\GutTimer.h" />
+    <ClInclude Include="..\..\src\gutlib\GutUserControl.h" />
+    <ClInclude Include="..\..\src\gutlib\GutWin32.h" />
+    <ClInclude Include="..\..\src\gutlib\Matrix4x4.h" />
+    <ClInclude Include="..\..\src\gutlib\Matrix4x4_Reference.h" />
+    <ClInclude Include="..\..\src\gutlib\Matrix4x4_SSE.h" />
+    <ClInclude Include="..\..\src\gutlib\Vector4.h" />
+    <ClInclude Include="..\..\src\gutlib\Vector4_Reference.h" />
+    <ClInclude Include="..\..\src\gutlib\Vector4_SSE.h" />
+    <ClInclude Include="..\..\src\gutlib\wglew.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C02956DD-0182-4516-BAF7-C3113A712683}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>gutlib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\props\LibBuild.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\props\LibBuild.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>D3D_DEBUG_INFO;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
