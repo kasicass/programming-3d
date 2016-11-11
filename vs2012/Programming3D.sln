@@ -12,6 +12,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_point", "chap02\02_point
 		{C02956DD-0182-4516-BAF7-C3113A712683} = {C02956DD-0182-4516-BAF7-C3113A712683}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chap16", "chap16", "{CF1CCBA3-EC7E-4106-9F56-EFB06843669E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16_DeferredLighting", "chap16\16_DeferredLighting.vcxproj", "{EE9BE35D-364D-4B97-BAF8-87F296E9AEA5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C02956DD-0182-4516-BAF7-C3113A712683} = {C02956DD-0182-4516-BAF7-C3113A712683}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -26,6 +33,10 @@ Global
 		{112EBA8C-1428-4F69-AB5F-D51063FADFA8}.Debug|Win32.Build.0 = Debug|Win32
 		{112EBA8C-1428-4F69-AB5F-D51063FADFA8}.Release|Win32.ActiveCfg = Release|Win32
 		{112EBA8C-1428-4F69-AB5F-D51063FADFA8}.Release|Win32.Build.0 = Release|Win32
+		{EE9BE35D-364D-4B97-BAF8-87F296E9AEA5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EE9BE35D-364D-4B97-BAF8-87F296E9AEA5}.Debug|Win32.Build.0 = Debug|Win32
+		{EE9BE35D-364D-4B97-BAF8-87F296E9AEA5}.Release|Win32.ActiveCfg = Release|Win32
+		{EE9BE35D-364D-4B97-BAF8-87F296E9AEA5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -33,5 +44,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C02956DD-0182-4516-BAF7-C3113A712683} = {F28DF971-E4A0-41AE-BA78-41E09E6BD903}
 		{112EBA8C-1428-4F69-AB5F-D51063FADFA8} = {6A1C3414-E5E7-443C-87B3-D1739DDBED54}
+		{EE9BE35D-364D-4B97-BAF8-87F296E9AEA5} = {CF1CCBA3-EC7E-4106-9F56-EFB06843669E}
 	EndGlobalSection
 EndGlobal
