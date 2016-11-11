@@ -3,6 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gutlib", "gutlib\gutlib.vcxproj", "{C02956DD-0182-4516-BAF7-C3113A712683}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{F28DF971-E4A0-41AE-BA78-41E09E6BD903}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chap02", "chap02", "{6A1C3414-E5E7-443C-87B3-D1739DDBED54}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_point", "chap02\02_point.vcxproj", "{112EBA8C-1428-4F69-AB5F-D51063FADFA8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C02956DD-0182-4516-BAF7-C3113A712683} = {C02956DD-0182-4516-BAF7-C3113A712683}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,8 +22,16 @@ Global
 		{C02956DD-0182-4516-BAF7-C3113A712683}.Debug|Win32.Build.0 = Debug|Win32
 		{C02956DD-0182-4516-BAF7-C3113A712683}.Release|Win32.ActiveCfg = Release|Win32
 		{C02956DD-0182-4516-BAF7-C3113A712683}.Release|Win32.Build.0 = Release|Win32
+		{112EBA8C-1428-4F69-AB5F-D51063FADFA8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{112EBA8C-1428-4F69-AB5F-D51063FADFA8}.Debug|Win32.Build.0 = Debug|Win32
+		{112EBA8C-1428-4F69-AB5F-D51063FADFA8}.Release|Win32.ActiveCfg = Release|Win32
+		{112EBA8C-1428-4F69-AB5F-D51063FADFA8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C02956DD-0182-4516-BAF7-C3113A712683} = {F28DF971-E4A0-41AE-BA78-41E09E6BD903}
+		{112EBA8C-1428-4F69-AB5F-D51063FADFA8} = {6A1C3414-E5E7-443C-87B3-D1739DDBED54}
 	EndGlobalSection
 EndGlobal
