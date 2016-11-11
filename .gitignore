@@ -12,3 +12,5 @@ ipch
 *.obj
 *.swp
 *.dll
+*.psess
+*.vspx
