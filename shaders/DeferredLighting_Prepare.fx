@@ -1,5 +1,6 @@
 /*
-	Deferred Lighting ªº·Ç³Æ¤u§@, §â¥´¥ú©Ò»İ­nªº¸ê®Æ¿é¥X¨ì°ÊºA¶K¹Ï¤¤.
+	Deferred Lighting çš„å‡†å¤‡å·¥ä½œï¼Œ
+	æŠŠå…‰ç…§æ‰€éœ€è¦çš„æ•°æ®è¾“å‡ºåˆ°åŠ¨æ€è´´å›¾ä¸­ã€‚
 */
 
 struct VS_INPUT
@@ -55,9 +56,11 @@ VS_OUTPUT VS(VS_INPUT In)
 	
 	Out.Position = mul(float4(In.Position, 1.0f), wvp_matrix);
 	Out.Texcoord = In.Texcoord;
-	// `¥@¬É®y¼Ğ¨t¤Wªº³»ÂI¦ì¸m`
+
+	// ä¸–ç•Œåæ ‡ç³»ä¸Šçš„é¡¶ç‚¹åæ ‡
 	Out.WorldPos = mul(float4(In.Position, 1.0f), world_matrix).xyz;
-	// `¥@¬É®y¼Ğ¨t¤Wªº normal ¸ò tangent space`
+
+	// ä¸–ç•Œåæ ‡ç³»ä¸Šçš„ normal å’Œ tangent space
 	Out.WorldNormal = mul(In.Normal, (float3x3) world_matrix);
 	Out.Tangent = mul(In.Tangent, (float3x3) world_matrix);
 	Out.Binormal = mul(In.Binormal, (float3x3) world_matrix);	
@@ -67,30 +70,28 @@ VS_OUTPUT VS(VS_INPUT In)
 
 struct PS_OUTPUT
 {
-	// `Position ©ñ¦b rendertarget0`
 	float4 WorldPos : COLOR0; 
-	// `Normal ©ñ¦b rendertarget1`
 	float4 WorldNormal : COLOR1;
-	// `¤Ï¥ú¯à¤O©ñ¦b rendertarget2`
 	float4 Diffuse : COLOR2;
 };
 
 PS_OUTPUT PS(VS_OUTPUT In)
 {
 	PS_OUTPUT Out;
-
 	float3x3 TangentSpace;
-	// `¨ú¥X normalmap`
+
+	// å–å‡º normalmap
 	float3 normalmap = tex2D(normalmapSampler, In.Texcoord);
 	normalmap = normalmap * 2.0f - 1.0f;
 	
 	TangentSpace[0] = normalize(In.Tangent);
 	TangentSpace[1] = normalize(In.Binormal);
 	TangentSpace[2] = normalize(In.WorldNormal);
-	// '§â normalmap ¦V¶qÂà´«¨ì¥@¬É®y¼Ğ¨t¤W'
+
+	// æŠŠ normalmap å‘é‡è½¬æ¢åˆ°ä¸–ç•Œåæ ‡ç³»ä¸Š
 	float3 worldNormal = mul(normalmap, TangentSpace);
 	
-	// `§â¦ì¸m, ­±¦V, ¤Ï¥ú­È¤À§O¿é¥X¨ì¤£¦Pªº rendertarget ¤W.`
+	// æŠŠ position, normal, diffuse åˆ†åˆ«è¾“å‡ºåˆ°ä¸åŒçš„ RenderTarget ä¸Š
 	Out.WorldPos = float4(In.WorldPos, 1.0f);
 	Out.WorldNormal = float4(worldNormal, 1.0f);
 	Out.Diffuse = tex2D(diffuseSampler, In.Texcoord);
