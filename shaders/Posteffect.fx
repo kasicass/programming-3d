@@ -1,11 +1,10 @@
-// 頂點的資料輸入格式
+
 struct VS_INPUT
 {
 	float3 Position : POSITION;
 	float2 Texcoord : TEXCOORD;
 };
 
-// Vertex Shader輸出的資料格式
 struct VS_OUTPUT
 {
 	float4 Position : SV_POSITION;
@@ -72,7 +71,7 @@ VS_OUTPUT VS_Passthrough(VS_INPUT In)
 }
 
 
-// 貼圖座標位移參數
+// 嚙皺嚙誕座嚙請位移嚙諸潘蕭
 uniform float4 vTexOffset[KernelSize];
 //
 // Blur Pixel Shader
@@ -89,7 +88,7 @@ float4 PS_Blur(VS_OUTPUT In) : COLOR
 	return color;
 }
 
-// 調整亮度參數
+// 嚙調橘蕭嚙瘦嚙論參潘蕭
 uniform float4 IntensityOffset;
 uniform float4 IntensityScale;
 
@@ -100,11 +99,11 @@ float4 PS_Brightness(VS_OUTPUT In) : COLOR
 {
 	float4 rgba = tex2D(LinearSampler, In.Texcoord);
 	float3 table = float3(0.3f, 0.59f, 0.11f);
-	// 先轉成灰階來察看它的亮度
+	// 嚙踝蕭嚙賞成嚙褒塚蕭嚙諉對蕭嚙豎伐蕭嚙踝蕭嚙瘦嚙踝蕭
 	float4 old_intensity = dot(rgba.rgb, table);
-	// 把亮度做個改變
+	// 嚙踝蕭嚙瘦嚙論堆蕭嚙諉改蕭嚙踝蕭
 	float4 new_intensity = (old_intensity + IntensityOffset) * IntensityScale;
-	// 把原始的顏色乘上新的亮度
+	// 嚙踝蕭嚙踝蕭嚙締嚙踝蕭嚙瘠嚙賤乘嚙磕嚙編嚙踝蕭嚙瘦嚙踝蕭
 	float4 color = rgba * new_intensity;
 	
 	return color;
@@ -170,9 +169,9 @@ sampler2D ZBufferSampler = sampler_state
 	AddressV  = Clamp;
 };
 
-// 控制景深變化參數
+// 嚙踝蕭嚙踐景嚙窯嚙豌化參潘蕭
 uniform float4 vDepthOfField;
-// 把非線性的Z值轉換回到鏡頭的線性距離
+// 嚙踝蕭嚙瘩嚙線嚙褊迎蕭Z嚙踝蕭嚙賞換嚙稷嚙踝蕭嚙踝蕭嚙磐嚙踝蕭嚙線嚙褊距嚙踝蕭
 uniform float4 vZInv;
 
 // Pixel Shader
