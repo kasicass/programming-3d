@@ -1,17 +1,16 @@
-// 設定頂點的資料格式
+
 struct VS_INPUT
 {
 	float3 Position : POSITION;
 	float3 Normal	: NORMAL;
 };
-// 設定Vertex Shader輸出的資料格式
+
 struct VS_OUTPUT
 {
 	float4 Position : POSITION;
 	float3 Normal	: TEXCOORD;
 };
 
-// 轉換矩陣
 uniform row_major float4x4 wvp_matrix : register(c0);
 uniform row_major float4x4 world_matrix : register(c4);
 
