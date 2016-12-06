@@ -1,6 +1,9 @@
 //
 // Pixel Shader
 //
+
+#version 130
+
 uniform sampler2D PosSampler;
 uniform sampler2D NormalmapSampler;
 uniform sampler2D AlbedoSampler;
@@ -12,15 +15,14 @@ uniform vec4 vLightAmbient;
 
 void main(void)
 {
-	// `ß‚ø√πıÆyº–¬‡¥´¶®∂KπœÆyº–`
 	vec2 vTexcoord = (gl_TexCoord[0].xy / gl_TexCoord[0].w) * vec2(0.5, 0.5) + vec2(0.5, 0.5);
 	
-	// `±q∂Kπœ§§®˙•X≥o≠”π≥Ø¿™∫¶Ï∏m, ≠±¶V, ∏Ú§œ•˙Ø‡§O.`
+	// ËØªÂèñ worldPos, worldNormal Âíå albedo
 	vec4 vWorldPos = texture2D(PosSampler, vTexcoord);
 	vec4 vWorldNormal = texture2D(NormalmapSampler, vTexcoord);
 	vec4 vAlbedo = texture2D(AlbedoSampler, vTexcoord);
 
-	// `≠p∫‚•¥•˙`
+	// ËÆ°ÁÆóÂÖâÁÖß
 	vec3 vLightDir = normalize(vLightPos.xyz - vWorldPos.xyz);
 	vec3 vCameraDir = normalize(vCameraPos.xyz - vWorldPos.xyz);
 	vec3 vHalfVector = normalize(vCameraDir + vLightDir);
@@ -29,8 +31,8 @@ void main(void)
 	float fAttenuation = 1.0 - fDistance / vLightPos.w;
 	
 	vec4 vAmbient = vAlbedo * vLightAmbient;
-	vec4 vDiffuse = vLightColor * saturate(dot(vLightDir, vWorldNormal));
-	vec4 vSpecular = vLightColor * pow(saturate(dot(vHalfVector, vWorldNormal)), 30.0) * vAlbedo.a;
+	vec4 vDiffuse = vLightColor * clamp(dot(vLightDir, vWorldNormal.xyz), 0.0, 1.0);
+	vec4 vSpecular = vLightColor * pow(clamp(dot(vHalfVector, vWorldNormal.xyz), 0.0, 1.0), 30.0) * vAlbedo.a;
 	vec4 vLighting = (vDiffuse + vSpecular) * vAlbedo * fAttenuation + vAmbient;
 	
 	gl_FragColor = vLighting;

@@ -1,6 +1,9 @@
 //
 // Pixel Shader
 //
+
+#version 130
+
 varying vec4 vWorldPos;
 varying vec3 vWorldNormal;
 varying vec3 vTangent;
