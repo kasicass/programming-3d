@@ -1,4 +1,3 @@
-// 把顏色向量(r,g,b,a)跟矩陣相乘
 
 struct VS_INPUT
 {
@@ -14,7 +13,6 @@ struct VS_OUTPUT
 
 sampler2D RGBSampler : register(s0);
 
-// 轉換矩陣
 // VS
 uniform row_major float4x4 wvp_matrix : register(c0);
 // PS

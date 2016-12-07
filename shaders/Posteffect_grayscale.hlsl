@@ -1,13 +1,11 @@
-// ±m¦âÂà¶Â¥Õ
+// å½©è‰²è½¬é»‘ç™½
 
-// ³»ÂIªº¸ê®Æ¿é¤J®æ¦¡
 struct VS_INPUT
 {
 	float3 Position : POSITION;
 	float2 Texcoord : TEXCOORD;
 };
 
-// Vertex Shader¿é¥Xªº¸ê®Æ®æ¦¡
 struct VS_OUTPUT
 {
 	float4 Position : POSITION;
@@ -16,7 +14,7 @@ struct VS_OUTPUT
 
 sampler2D RGBSampler : register(s0);
 
-// Âà´«¯x°}
+// è½¬æ¢çŸ©é˜µ
 uniform row_major float4x4 wvp_matrix : register(c0);
 
 //
