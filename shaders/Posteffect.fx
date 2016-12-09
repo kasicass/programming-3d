@@ -71,7 +71,7 @@ VS_OUTPUT VS_Passthrough(VS_INPUT In)
 }
 
 
-// �K�Ϯy�Ц첾�Ѽ�
+// 贴图坐标位移参数
 uniform float4 vTexOffset[KernelSize];
 //
 // Blur Pixel Shader
@@ -88,7 +88,7 @@ float4 PS_Blur(VS_OUTPUT In) : COLOR
 	return color;
 }
 
-// �վ��G�װѼ�
+// 调整亮度的参数
 uniform float4 IntensityOffset;
 uniform float4 IntensityScale;
 
@@ -99,11 +99,11 @@ float4 PS_Brightness(VS_OUTPUT In) : COLOR
 {
 	float4 rgba = tex2D(LinearSampler, In.Texcoord);
 	float3 table = float3(0.3f, 0.59f, 0.11f);
-	// ���ন�Ƕ��ӹ��ݥ����G��
+	// 先转化成灰度来查看它的亮度
 	float4 old_intensity = dot(rgba.rgb, table);
-	// ���G�װ��ӧ���
+	// 把亮度做个改变
 	float4 new_intensity = (old_intensity + IntensityOffset) * IntensityScale;
-	// �����l���C�⭼�W�s���G��
+	// 把原始的颜色乘上新的亮度
 	float4 color = rgba * new_intensity;
 	
 	return color;
